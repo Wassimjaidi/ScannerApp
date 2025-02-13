@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CNK Pro</string>
+    <string name="title_activity_main">CNK Pro</string>
+    <string name="package_name">io.cnk.pro</string>
+    <string name="custom_url_scheme">io.cnk.pro</string>
+</resources>

@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Saisir le numéro CNK</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card class="card-style">
+    <ion-card-header>
+      <ion-card-title class="card-title">Entrez un numéro</ion-card-title>
+      <ion-card-subtitle class="card-subtitle">Vérifiez la validité du numéro CNK</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item lines="none" class="input-item">
+        <ion-input [(ngModel)]="cardNumber" type="text" placeholder="Entrez le numéro CNK" class="custom-input"
+          (input)="onInputChange()">
+        </ion-input>
+      </ion-item>
+
+      <ion-button expand="full" color="primary" (click)="checkCard()" class="check-button">
+        Vérifier
+      </ion-button>
+
+      <div *ngIf="isValid !== null && showResult" class="result-container ion-margin-top">
+        <ion-chip [color]="isValid ? 'success' : 'danger'" class="result-chip">
+          <ion-icon [name]="isValid ? 'checkmark-circle' : 'close-circle'" class="icon-style"></ion-icon>
+          <ion-label>{{ isValid ? 'Numéro Valide ' : 'Numéro Invalide ' }}</ion-label>
+        </ion-chip>
+
+        <ion-item lines="none" class="result-item">
+          <ion-label class="result-label">Sans CRC :</ion-label>
+          <ion-text color="primary" class="result-text"><strong>{{ cardNumber }}</strong></ion-text>
+        </ion-item>
+
+        <ion-item lines="none" class="result-item">
+          <ion-label class="result-label">Avec CRC :</ion-label>
+          <ion-text color="secondary" class="result-text"><strong>{{ withCRC }}</strong></ion-text>
+        </ion-item>
+      </div>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

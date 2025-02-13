@@ -1,0 +1,42 @@
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+
+  }
+  
+  .description-container {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20vh;
+  }
+  
+  .description-container h2 {
+    font-size: 28px;
+    color: #4a90e2;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .description-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .description-container p:first-of-type {
+    font-weight: 500;
+  }
+  
+  .description-container p:last-of-type {
+    font-weight: 400;
+    color: #888;
+  }
+  

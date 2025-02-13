@@ -1,0 +1,7 @@
+{
+  "name": "CNK Pro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Scanner un Code</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card class="card-style">
+    <ion-card-header>
+      <ion-card-title class="card-title">Informations scannées</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Code : {{ scannedData ? scannedData : '-- --'}}</p>
+      <ion-button expand="full" (click)="scanBarcode()" class="check-button">
+        <span>Scanner</span>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

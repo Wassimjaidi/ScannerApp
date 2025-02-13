@@ -1,0 +1,66 @@
+.card-style {
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--ion-color-primary);
+  }
+  
+  .card-subtitle {
+    font-size: 0.9rem;
+    color: var(--ion-color-medium);
+  }
+  
+  .input-item {
+    --background: var(--ion-color-light);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .custom-input {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --placeholder-color: var(--ion-color-medium);
+    --color: var(--ion-color-dark);
+  }
+  
+  .check-button {
+    --border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .result-container {
+    background: var(--ion-color-light);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .result-chip {
+    margin-bottom: 16px;
+  }
+  
+  .icon-style {
+    margin-right: 8px;
+  }
+  
+  .result-item {
+    --background: transparent;
+    --padding-start: 0;
+    --padding-end: 0;
+  }
+  
+  .result-label {
+    font-size: 1rem;
+    color: var(--ion-color-medium);
+  }
+  
+  .result-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
